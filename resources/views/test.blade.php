@@ -24,7 +24,7 @@
             <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
         </div>
 
-        <div class="menu-category list-group">
+        {{--<div class="menu-category list-group">
             <div class="menu-category-name list-group-item active">Category</div><a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
             <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
             <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
@@ -71,7 +71,7 @@
             <div class="menu-category-name list-group-item active">Category</div><a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
             <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
             <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        </div>
+        </div>--}}
     </div>
 </div>
 

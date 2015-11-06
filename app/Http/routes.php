@@ -18,3 +18,20 @@ Route::get('/', function () {
 Route::get('test', function(){
     return view('test');
 });
+
+Route::group(['prefix' => 'admin'], function(){
+
+    Route::group(['prefix' => 'function'],function(){
+
+        Route::get('create', ['uses' => 'AdminFunctionController@create', 'as' => 'create']);
+
+        Route::post('/','AdminFunctionController@store');
+    });
+
+    Route::group(['prefix' => 'function_type'],function(){
+
+        Route::get('create', ['uses' => 'AdminFunctionTypeController@create', 'as' => 'create']);
+
+        Route::post('/','AdminFunctionTypeController@store');
+    });
+});
