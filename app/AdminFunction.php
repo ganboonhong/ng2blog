@@ -8,6 +8,6 @@ class AdminFunction extends Model
 {
     protected $table = 'admin_functions';
 
-    protected $fillable = ['name'];
+    protected $fillable = ['name', 'admin_function_type_id'];
 
 }

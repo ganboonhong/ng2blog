@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\AdminFunction;
+use App\AdminFunctionType;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Log;
 
 class AdminFunctionController extends Controller
 {
@@ -27,7 +29,9 @@ class AdminFunctionController extends Controller
      */
     public function create()
     {
-        return view('admin.functions.function_create');
+        $function_types = AdminFunctionType::all();
+
+        return view('admin.functions.function_create', compact('function_types'));
     }
 
     /**
@@ -38,7 +42,8 @@ class AdminFunctionController extends Controller
      */
     public function store(Request $request)
     {
-        $input = (array)$request;
+        $input = (array)$request->all();
+        Log::info($input);
         AdminFunction::create($input);
     }
 
