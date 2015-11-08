@@ -19,7 +19,8 @@ class AdminFunctionController extends Controller
      */
     public function index()
     {
-        //
+        $functions = AdminFunction::all();
+        return view('admin.functions.list', compact('functions'));
     }
 
     /**
@@ -31,7 +32,7 @@ class AdminFunctionController extends Controller
     {
         $function_types = AdminFunctionType::all();
 
-        return view('admin.functions.function_create', compact('function_types'));
+        return view('admin.functions.create', compact('function_types'));
     }
 
     /**
@@ -43,8 +44,10 @@ class AdminFunctionController extends Controller
     public function store(Request $request)
     {
         $input = (array)$request->all();
-        Log::info($input);
         AdminFunction::create($input);
+        $functions = AdminFunction::all();
+
+        return view('admin.functions.list', compact('functions'));
     }
 
     /**
@@ -66,7 +69,10 @@ class AdminFunctionController extends Controller
      */
     public function edit($id)
     {
-        //
+        $function_types = AdminFunctionType::all();
+        $function = AdminFunction::find($id);
+
+        return view('admin.functions.edit', compact('function', 'function_types'));
     }
 
     /**
@@ -78,7 +84,11 @@ class AdminFunctionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $function = AdminFunction::find($id);
+        $function->name = $request->name;
+        $function->save();
+
+        return redirect('admin/function');
     }
 
     /**

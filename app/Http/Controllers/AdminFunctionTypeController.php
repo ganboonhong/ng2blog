@@ -17,7 +17,8 @@ class AdminFunctionTypeController extends Controller
      */
     public function index()
     {
-        //
+        $function_types = AdminFunctionType::all();
+        return view('admin.functions.type_list', compact('function_types'));
     }
 
     /**
@@ -27,7 +28,7 @@ class AdminFunctionTypeController extends Controller
      */
     public function create()
     {
-        return view('admin.functions.function_type_create');
+        return view('admin.functions.type_create');
     }
 
     /**
@@ -40,7 +41,7 @@ class AdminFunctionTypeController extends Controller
     {
         $input = (array)$request->all();
         AdminFunctionType::create($input);
-        return $input;
+        return $this->index();
     }
 
     /**
