@@ -99,6 +99,9 @@ class AdminFunctionController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $function = AdminFunction::find($id);
+        $function->delete();
+
+        return redirect('admin/function');
     }
 }

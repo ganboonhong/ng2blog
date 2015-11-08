@@ -23,30 +23,50 @@ Route::group(['prefix' => 'admin'], function(){
 
     Route::group(['prefix' => 'function_type'],function(){
 
-        Route::get('create', ['uses' => 'AdminFunctionTypeController@create', 'as' => 'create']);
+        Route::get('/','AdminFunctionTypeController@index');
 
         Route::post('/','AdminFunctionTypeController@store');
 
-        Route::get('/','AdminFunctionTypeController@index');
+        Route::get('create', ['uses' => 'AdminFunctionTypeController@create', 'as' => 'create']);
+
+        Route::get('destroy/{id}',
+                    [   'uses' => 'AdminFunctionTypeController@destroy',
+                        'as'   => 'function_type_destroy'])
+                        ->where('id', '[0-9]+');
+
+        Route::get('edit/{id}',
+                    [   'uses' => 'AdminFunctionTypeController@edit',
+                        'as'   => 'function_type_edit'])
+                        ->where('id', '[0-9]+');
+
+        Route::post('update/{id}',
+                    [   'uses'  => 'AdminFunctionTypeController@update',
+                        'as'    => 'function_type_update'])
+                        ->where('id', '[0-9]+');
     });
 
     Route::group(['prefix' => 'function'],function(){
 
-        Route::get('create',
-                    ['uses' => 'AdminFunctionController@create', 'as' => 'create']);
+        Route::get('/','AdminFunctionController@index');
 
         Route::post('/','AdminFunctionController@store');
 
-        Route::post('/update/{id}',
-                    ['uses'  => 'AdminFunctionController@update',
-                     'as'    => 'function_update'])
-                    ->where('id', '[0-9]+');
+        Route::get('create',
+                    [   'uses' => 'AdminFunctionController@create', 'as' => 'create']);
 
-        Route::get('/','AdminFunctionController@index');
+        Route::get('destroy/{id}',
+                    [   'uses' => 'AdminFunctionController@destroy',
+                        'as'   => 'function_destroy'])
+                        ->where('id', '[0-9]+');
 
         Route::get('edit/{id}',
-                    ['uses' => 'AdminFunctionController@edit',
-                     'as'   => 'function_edit'])
-                    ->where('id', '[0-9]+');
+                    [   'uses' => 'AdminFunctionController@edit',
+                        'as'   => 'function_edit'])
+                        ->where('id', '[0-9]+');
+
+        Route::post('update/{id}',
+                    [   'uses'  => 'AdminFunctionController@update',
+                        'as'    => 'function_update'])
+                        ->where('id', '[0-9]+');
     });
 });

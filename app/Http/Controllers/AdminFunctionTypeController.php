@@ -63,7 +63,8 @@ class AdminFunctionTypeController extends Controller
      */
     public function edit($id)
     {
-        //
+        $function_type = AdminFunctionType::find($id);
+        return view('admin.functions.type_edit', compact('function_type'));
     }
 
     /**
@@ -86,6 +87,8 @@ class AdminFunctionTypeController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $function_type = AdminFunctionType::find($id);
+        $function_type->delete();
+        return redirect('admin/function_type');
     }
 }

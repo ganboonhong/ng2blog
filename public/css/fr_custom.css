@@ -1,0 +1,9 @@
+.list_delete_btn{
+    margin-left:10px;
+}
+.item_row{
+    display: inline-block;
+    width:90%;
+}
+
+.big-checkbox {width: 22px; height: 22px;}

@@ -11,8 +11,7 @@ html {
   -webkit-text-size-adjust: 100%; }
 
 body {
-  margin: 0;
-}
+  margin: 0; }
 
 article,
 aside,
@@ -1056,7 +1055,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
-  background-color: #FFFF99; }
+  background-color: #fff; }
 
 input,
 button,
@@ -5758,23 +5757,3 @@ body {
   padding-top: 40px; }
 
 /*# sourceMappingURL=app.css.map */
-
-/* block-like css*/
-*, *:before, *:after {box-sizing:  border-box !important;}
-
-
-.row {
-    -moz-column-width: 18em;
-    -webkit-column-width: 18em;
-    -moz-column-gap: 1em;
-    -webkit-column-gap: 1em;
-
-}
-
-.menu-category {
-    display: inline-block;
-    margin:  0.25rem;
-    padding:  1rem;
-    width:  100%;
-}
-/* end of block-like css*/

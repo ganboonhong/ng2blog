@@ -35,4 +35,11 @@ elixir(function(mix) {
     mix.sass('app.scss')
         .copy(bootstrapPath + '/fonts', 'public/fonts')
         .copy(bootstrapPath + '/javascripts/bootstrap.min.js',
-        'public/js'); });
+        'public/js');
+
+
+    mix.styles([
+        'app.css'
+    ], null, 'public/css');
+
+});
