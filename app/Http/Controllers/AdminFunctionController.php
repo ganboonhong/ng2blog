@@ -104,4 +104,15 @@ class AdminFunctionController extends Controller
 
         return redirect('admin/function');
     }
+
+    /**
+     * @param  \Illuminate\Http\Request  $request
+     *
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function deleteMultipleItems(Request $request){
+
+        AdminFunction::destroy($request->checkboxes);
+        return redirect('admin/function');
+    }
 }

@@ -10,6 +10,7 @@
 
     @section('items')
 
+        {!! Form::open(array('action' => ('AdminFunctionController@deleteMultipleItems'))) !!}
         @foreach( $functions as $key => $function )
 
             @if($key == 0)
@@ -19,12 +20,15 @@
                 </label>
             </span>
                 <a class="list-group-item item_row active">系統功能</a>
+                <button class="btn btn-danger btn-sm list_delete_btn" id="delete_all_btn" style="display: none">
+                    <span class="glyphicon glyphicon-trash"></span>
+                </button>
                 <br />
             @endif
 
             <span>
                 <label>
-                    <input type="checkbox" value="" class="big-checkbox">
+                    <input name="checkboxes[]" type="checkbox" value="{{$function->admin_function_id}}" class="big-checkbox">
                 </label>
             </span>
 
@@ -37,6 +41,7 @@
             <br />
             {{--<a href="#" class="list-group-item active">Second item</a>--}}
         @endforeach
+        {!! Form::close() !!}
 
     @stop
 

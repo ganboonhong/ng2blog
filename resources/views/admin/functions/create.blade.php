@@ -11,20 +11,20 @@
     @section('content')
 
         {!! Form::open(array('url' => 'admin/function')) !!}
-        <div class="form-group">
-            <label for="name">名稱:</label>
-            <input type="text" name="name" class="form-control" id="name">
-        </div>
+            <div class="form-group">
+                <label for="name">名稱:</label>
+                <input type="text" name="name" class="form-control" id="name">
+            </div>
 
-        <label for="sel1">Select list (select one):</label>
+            <label for="sel1">Select list (select one):</label>
 
-        <select name="admin_function_type_id" class="form-control" id="sel1">
-            @foreach( $function_types as $function_type )
-                <option value="{{$function_type->admin_function_type_id}}">{{$function_type->name}}</option>
-            @endforeach
-        </select>
+            <select name="admin_function_type_id" class="form-control" id="sel1">
+                @foreach( $function_types as $function_type )
+                    <option value="{{$function_type->admin_function_type_id}}">{{$function_type->name}}</option>
+                @endforeach
+            </select>
 
-        <button type="submit" class="btn btn-primary form-control" style="margin-top: 10px">新增</button>
+            <button type="submit" class="btn btn-primary form-control" style="margin-top: 10px">新增</button>
         {!! Form::close() !!}
 
     @stop

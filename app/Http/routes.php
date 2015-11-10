@@ -68,5 +68,10 @@ Route::group(['prefix' => 'admin'], function(){
                     [   'uses'  => 'AdminFunctionController@update',
                         'as'    => 'function_update'])
                         ->where('id', '[0-9]+');
+
+        Route::post('delete_multiple_items',
+                    [   'uses'  => 'AdminFunctionController@deleteMultipleItems',
+                        'as'    => 'delete_multiple_items'
+                    ]);
     });
 });

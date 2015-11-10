@@ -41,6 +41,19 @@
 
         get_checkboxes_checked();
 
+        $('.big-checkbox').change(function(){
+            var checked_exist = false;
+            $('.big-checkbox').each(function(){
+                if($(this).prop('checked')) checked_exist = true;
+            });
+
+            if(checked_exist){
+                $('#delete_all_btn').show();
+            }else{
+                $('#delete_all_btn').hide();
+            }
+        })
+
     });
 
     function get_checkboxes_checked(){
@@ -52,4 +65,7 @@
             }
         });
     }
+
+
+
 </script>
