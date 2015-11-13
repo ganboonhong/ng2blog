@@ -8,9 +8,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Log;
 
-class AdminFunctionController extends Controller
+class HomepageController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -20,7 +19,8 @@ class AdminFunctionController extends Controller
     public function index()
     {
         $functions = AdminFunction::all();
-        return view('admin.functions.list', compact('functions'));
+
+        return view('admin.homepage.home', compact('functions'));
     }
 
     /**
@@ -30,9 +30,7 @@ class AdminFunctionController extends Controller
      */
     public function create()
     {
-        $function_types = AdminFunctionType::all();
-
-        return view('admin.functions.create', compact('function_types'));
+        //
     }
 
     /**
@@ -43,11 +41,7 @@ class AdminFunctionController extends Controller
      */
     public function store(Request $request)
     {
-        $input = (array)$request->all();
-        AdminFunction::create($input);
-        $functions = AdminFunction::all();
-
-        return view('admin.functions.list', compact('functions'));
+        //
     }
 
     /**
@@ -69,10 +63,7 @@ class AdminFunctionController extends Controller
      */
     public function edit($id)
     {
-        $function_types = AdminFunctionType::all();
-        $function = AdminFunction::find($id);
-
-        return view('admin.functions.edit', compact('function', 'function_types'));
+        //
     }
 
     /**
@@ -84,12 +75,7 @@ class AdminFunctionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $function = AdminFunction::find($id);
-        $function->name = $request->name;
-        $function->admin_function_type_id = $request->admin_function_type_id;
-        $function->save();
-
-        return redirect('admin/function');
+        //
     }
 
     /**
@@ -100,20 +86,16 @@ class AdminFunctionController extends Controller
      */
     public function destroy($id)
     {
-        $function = AdminFunction::find($id);
-        $function->delete();
-
-        return redirect('admin/function');
+        //
     }
 
     /**
-     * @param  \Illuminate\Http\Request  $request
+     * Display a login page
      *
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * @return \Illuminate\Http\Response
      */
-    public function deleteMultipleItems(Request $request){
-
-        AdminFunction::destroy($request->checkboxes);
-        return redirect('admin/function');
+    public function login_page()
+    {
+        return view('admin.homepage.login');
     }
 }

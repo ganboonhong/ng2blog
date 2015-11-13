@@ -34,6 +34,11 @@ Route::group(['prefix' => 'admin'], function(){
                         'as'   => 'function_type_destroy'])
                         ->where('id', '[0-9]+');
 
+        Route::post('delete_multiple_items',
+            [   'uses'  => 'AdminFunctionTypeController@deleteMultipleItems',
+                'as'    => 'delete_multiple_items'
+            ]);
+
         Route::get('edit/{id}',
                     [   'uses' => 'AdminFunctionTypeController@edit',
                         'as'   => 'function_type_edit'])
@@ -54,6 +59,11 @@ Route::group(['prefix' => 'admin'], function(){
         Route::get('create',
                     [   'uses' => 'AdminFunctionController@create', 'as' => 'create']);
 
+        Route::post('delete_multiple_items',
+            [   'uses'  => 'AdminFunctionController@deleteMultipleItems',
+                'as'    => 'delete_multiple_items'
+            ]);
+
         Route::get('destroy/{id}',
                     [   'uses' => 'AdminFunctionController@destroy',
                         'as'   => 'function_destroy'])
@@ -68,10 +78,18 @@ Route::group(['prefix' => 'admin'], function(){
                     [   'uses'  => 'AdminFunctionController@update',
                         'as'    => 'function_update'])
                         ->where('id', '[0-9]+');
+    });
 
-        Route::post('delete_multiple_items',
-                    [   'uses'  => 'AdminFunctionController@deleteMultipleItems',
-                        'as'    => 'delete_multiple_items'
-                    ]);
+    Route::group(['prefix' => 'homepage'], function(){
+
+        Route::get('/',
+             [   'uses'  => 'HomepageController@index',
+                 'as'    => 'homepage'
+             ]
+        );
+
+        Route::get('/login', 'HomepageController@login_page');
+
+
     });
 });
