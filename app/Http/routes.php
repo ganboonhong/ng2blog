@@ -27,7 +27,9 @@ Route::group(['prefix' => 'admin'], function(){
 
         Route::post('/','AdminFunctionTypeController@store');
 
-        Route::get('create', ['uses' => 'AdminFunctionTypeController@create', 'as' => 'create']);
+        Route::get('create',
+            [   'uses' => 'AdminFunctionTypeController@create',
+                'as' => 'function_type_create']);
 
         Route::get('destroy/{id}',
                     [   'uses' => 'AdminFunctionTypeController@destroy',
@@ -36,8 +38,7 @@ Route::group(['prefix' => 'admin'], function(){
 
         Route::post('delete_multiple_items',
             [   'uses'  => 'AdminFunctionTypeController@deleteMultipleItems',
-                'as'    => 'delete_multiple_items'
-            ]);
+                'as'    => 'delete_multiple_items']);
 
         Route::get('edit/{id}',
                     [   'uses' => 'AdminFunctionTypeController@edit',
@@ -57,12 +58,12 @@ Route::group(['prefix' => 'admin'], function(){
         Route::post('/','AdminFunctionController@store');
 
         Route::get('create',
-                    [   'uses' => 'AdminFunctionController@create', 'as' => 'create']);
+                    [   'uses' => 'AdminFunctionController@create',
+                        'as' => 'function_create']);
 
         Route::post('delete_multiple_items',
             [   'uses'  => 'AdminFunctionController@deleteMultipleItems',
-                'as'    => 'delete_multiple_items'
-            ]);
+                'as'    => 'delete_multiple_items']);
 
         Route::get('destroy/{id}',
                     [   'uses' => 'AdminFunctionController@destroy',
@@ -93,7 +94,35 @@ Route::group(['prefix' => 'admin'], function(){
     });
 
     Route::group(['prefix' => 'user'], function(){
+
+        Route::get  ('/', 'UserController@index');
+
         Route::post ('/', 'UserController@store');
-        Route::get  ('/create', 'UserController@create');
+
+        Route::get  ('/create', [
+            'uses'  => 'UserController@create',
+            'as'    => 'user_create'
+        ]);
+
+        Route::get  ('/edit/{id}',
+            [   'uses'  => 'UserController@edit',
+                'as'    => 'user_edit'])
+            ->where('id', '[0-9]+');
+
+        Route::post ('update/{id}',
+            [   'uses'  => 'UserController@update',
+                'as'    => 'user_update'])
+            ->where('id', '[0-9]+');
+
+        Route::get  ('destroy/{id}',
+            [   'uses'  => 'UserController@destroy',
+                'as'    => 'user_destroy'])
+            ->where('id', '[0-9]+');
+
+        Route::post('delete_multiple_items',
+            [   'uses'  => 'UserController@deleteMultipleItems',
+                'as'    => 'delete_multiple_items'
+            ]);
+
     });
 });

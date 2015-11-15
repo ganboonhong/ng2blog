@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
@@ -16,7 +18,9 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        $users = User::all();
+
+        return view('admin.user.list', compact('users'));
     }
 
     /**
@@ -26,7 +30,9 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('admin.user.create');
+        $privileges = DB::table('privileges')->get();
+
+        return view('admin.user.create', compact('privileges'));
     }
 
     /**
@@ -37,7 +43,10 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = (array)$request->all();
+        User::create($input);
+
+        return redirect()->action('UserController@index');
     }
 
     /**
@@ -59,7 +68,10 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::find($id);
+        $privileges = DB::table('privileges')->get();
+
+        return view('admin.user.edit', compact('user', 'privileges'));
     }
 
     /**
@@ -71,7 +83,12 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user           = User::find($id);
+        $user->name     = $request->name;
+        $user->email    = $request->email;
+        $user->save();
+
+        return redirect()->action('UserController@index');
     }
 
     /**
@@ -82,6 +99,20 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        User::find($id)->delete();
+
+        return redirect()->action('UserController@index');
+    }
+
+    /**
+     * @param  \Illuminate\Http\Request  $request
+     *
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function deleteMultipleItems(Request $request)
+    {
+        User::destroy($request->checkboxes);
+
+        return redirect()->action('UserController@index');
     }
 }

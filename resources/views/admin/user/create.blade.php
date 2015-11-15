@@ -34,7 +34,13 @@
 
         <div class="form-group">
             <label for="password">權限:</label>
-            <input type="password" name="privilege" class="form-control" id="privilege">
+            <select class="form-control" name="level">
+                @foreach( $privileges as $privilege )
+                    <option value="{{$privilege->level}}">
+                        {{$privilege->name}}
+                    </option>
+                @endforeach
+            </select>
         </div>
 
         <button type="submit" class="btn btn-primary form-control">新增</button>

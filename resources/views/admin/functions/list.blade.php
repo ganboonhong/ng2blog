@@ -1,11 +1,14 @@
 @extends('admin.templates.list')
 
-    @section('title')
+    @section('header_title')
         系統功能
     @stop
 
     @section('title')
         系統功能
+        <a href="{{route('function_create')}}" class="btn btn-success btn-sm list_delete_btn">
+            <span class="glyphicon glyphicon-leaf"></span>
+        </a>
     @stop
 
     @section('items')
