@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAdminFunctionTypesTable extends Migration
+class CreatePrivilegesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,10 +12,12 @@ class CreateAdminFunctionTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('admin_function_types', function (Blueprint $table) {
-            $table->increments('admin_function_type_id');
-            $table->string('name', 100);
+        Schema::create('privileges', function (Blueprint $table) {
+            $table->increments('id');
             $table->timestamps();
+            $table->integer('level');
+            $table->string('name');
+
         });
     }
 
@@ -26,6 +28,6 @@ class CreateAdminFunctionTypesTable extends Migration
      */
     public function down()
     {
-        //Schema::drop('admin_function_types');
+        Schema::drop('privileges');
     }
 }

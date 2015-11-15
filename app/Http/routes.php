@@ -90,6 +90,10 @@ Route::group(['prefix' => 'admin'], function(){
 
         Route::get('/login', 'HomepageController@login_page');
 
+    });
 
+    Route::group(['prefix' => 'user'], function(){
+        Route::post ('/', 'UserController@store');
+        Route::get  ('/create', 'UserController@create');
     });
 });
