@@ -6,7 +6,7 @@
 
 @section('title')
     使用者名單
-    <a href="{{route('user_create')}}" class="btn btn-success btn-sm list_delete_btn">
+    <a href="{{route('user_create')}}" class="btn btn-success btn-sm list_delete_btn" title="新增使用者">
         <span class="glyphicon glyphicon-leaf"></span>
     </a>
 

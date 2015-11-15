@@ -1,6 +1,6 @@
 @extends('admin.templates.create')
 
-@section('title')
+@section('title_header')
     新增使用者
 @stop
 
@@ -10,11 +10,11 @@
 
 @section('content')
 
-    {!! Form::open(array('url' => 'admin/user')) !!}
+    {!! Form::open(array('url' => 'admin/user', 'id' => 'user_form')) !!}
 
         <div class="form-group">
             <label for="name">名稱</label>
-            <input type="text" name="name" class="form-control" id="name">
+            <input type="text" name="name" class="form-control" id="name" >
         </div>
 
         <div class="form-group">
@@ -46,4 +46,20 @@
         <button type="submit" class="btn btn-primary form-control">新增</button>
     {!! Form::close() !!}
 
+
+
+    <script>
+
+        $(function(){
+            $('#user_form').validate({
+                rules:{
+                    name: "required"
+                }
+            });
+        })
+
+    </script>
+
 @stop
+
+
