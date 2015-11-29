@@ -223,9 +223,10 @@
             <div class="wrap">
                 <p class="form-title">
                     Sign In</p>
-                <form class="login">
-                    <input type="text" placeholder="Username" id="username"/>
-                    <input type="password" placeholder="Password" />
+                <form class="login" method="POST" action="/auth/login">
+                    {!! csrf_field() !!}
+                    <input type="text"      name="email" placeholder="email" id="email" />
+                    <input type="password"  name="password" placeholder="Password" />
                     <input type="submit" value="Sign In" class="btn btn-success btn-sm" />
                     <div class="remember-forgot">
                         <div class="row">

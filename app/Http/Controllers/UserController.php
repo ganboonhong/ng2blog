@@ -30,7 +30,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        $privileges = DB::table('privileges')->get();
+        $privileges = DB::table('privileges')->orderBy('id', 'desc')->get();
 
         return view('admin.user.create', compact('privileges'));
     }
@@ -44,7 +44,9 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $input = (array)$request->all();
-        User::create($input);
+        $user = User::create($input);
+        $user->password = bcrypt($request->password);
+        $user->save();
 
         return redirect()->action('UserController@index');
     }
@@ -86,6 +88,11 @@ class UserController extends Controller
         $user           = User::find($id);
         $user->name     = $request->name;
         $user->email    = $request->email;
+        $user->level    = $request->level;
+        if( $request->password != "")
+        {
+            $user->password = bcrypt($request->password);
+        }
         $user->save();
 
         return redirect()->action('UserController@index');

@@ -53,7 +53,20 @@
         $(function(){
             $('#user_form').validate({
                 rules:{
-                    name: "required"
+                    name: "required",
+                    email:{
+                        required: true,
+                        email   : true
+                    },
+                    password:{
+                        required    : true,
+                        minlength   : 5
+                    },
+                    password_2:{
+                        required    : true,
+                        minlength   : 5,
+                        equalTo     : "#password"
+                    }
                 }
             });
         })
