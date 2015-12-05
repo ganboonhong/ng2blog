@@ -1,16 +1,16 @@
 @extends('admin.templates.create')
 
     @section('title')
-        新增功能
+        文章（新增）
     @stop
 
     @section('title')
-        新增功能
+        文章（新增）
     @stop
 
     @section('content')
 
-        {!! Form::open(array('url' => 'admin/function', 'id' => 'function_form')) !!}
+        {!! Form::open(array('url' => 'admin/article', 'id' => 'article_form')) !!}
             <div class="form-group">
                 <label for="name">名稱:</label>
                 <input type="text" name="name" class="form-control" id="name">

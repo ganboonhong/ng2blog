@@ -17,7 +17,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $categories = Category::all();
+        return view('admin.category.list', compact('categories'));
     }
 
     /**
@@ -62,7 +63,8 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $category = Category::findOrFail($id);
+        return view('admin.category.edit', compact('category'));
     }
 
     /**
@@ -74,7 +76,12 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        Category::find($id)->update([
+            'name'      => $request->name,
+            'name_en'   => $request->name_en,
+            'visible'   => $request->visible]);
+
+        return $this->index();
     }
 
     /**
@@ -85,6 +92,18 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Category::find($id)->delete();
+        return $this->index();
+    }
+
+    /**
+     * @param  \Illuminate\Http\Request  $request
+     *
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function deleteMultipleItems(Request $request){
+
+        Category::destroy($request->checkboxes);
+        return $this->index();
     }
 }

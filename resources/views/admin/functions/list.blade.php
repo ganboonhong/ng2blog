@@ -7,7 +7,7 @@
     @section('title')
         系統功能
         <a href="{{route('function_create')}}" class="btn btn-success btn-sm list_delete_btn">
-            <span class="glyphicon glyphicon-leaf"></span>
+            <span class="glyphicon glyphicon-leaf" title="新增"></span>
         </a>
     @stop
 

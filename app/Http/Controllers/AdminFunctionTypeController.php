@@ -76,7 +76,10 @@ class AdminFunctionTypeController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $function_type = AdminFunctionType::find($id);
+        $function_type->name = $request->name;
+        $function_type->save();
+        return $this->index();
     }
 
     /**

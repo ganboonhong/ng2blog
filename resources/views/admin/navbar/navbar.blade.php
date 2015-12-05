@@ -14,7 +14,8 @@
                     </ul>
                 </li>--}}
                 <li><a href="/admin/function">System</a></li>
-                <li><a href="#">Articles</a></li>
+                <li><a href="/admin/category">Category</a></li>
+                <li><a href="#">Article</a></li>
             </ul>
 
             <form class="navbar-form navbar-left navbar-right" role="search">

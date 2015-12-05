@@ -1,21 +1,21 @@
 @extends('admin.templates.list')
 
     @section('header_title')
-        系統功能分類
+        文章分類
     @stop
 
     @section('title')
-        系統功能分類
-        <a href="{{route('function_type_create')}}" class="btn btn-success btn-sm list_delete_btn">
-            <span class="glyphicon glyphicon-leaf"></span>
+        文章分類
+        <a href="{{route('category_create')}}" class="btn btn-success btn-sm list_delete_btn">
+            <span class="glyphicon glyphicon-leaf" title="新增"></span>
         </a>
     @stop
 
     @section('items')
 
-        {!! Form::open(array('action' => ('AdminFunctionTypeController@deleteMultipleItems'))) !!}
+        {!! Form::open(array('action' => ('CategoryController@deleteMultipleItems'))) !!}
 
-            @foreach( $function_types as $key => $function_type )
+            @foreach( $categories as $key => $category )
 
                 @if($key == 0)
                     <span>
@@ -24,7 +24,7 @@
                         </label>
                     </span>
 
-                    <a class="list-group-item item_row active">系統功能分類</a>
+                    <a class="list-group-item item_row active">文章分類</a>
                         <button class="btn btn-danger btn-sm list_delete_btn" id="delete_all_btn" style="display: none">
                             <span class="glyphicon glyphicon-trash"></span>
                         </button>
@@ -33,15 +33,15 @@
 
                 <span>
                     <label>
-                        <input name="checkboxes[]" type="checkbox" value="{{$function_type->admin_function_type_id}}" class="big-checkbox">
+                        <input name="checkboxes[]" type="checkbox" value="{{$category->category_id}}" class="big-checkbox">
                     </label>
                 </span>
 
-                <a href="{{route('function_type_edit', ['id' => $function_type->admin_function_type_id])}}"
+                <a href="{{route('category_edit', ['id' => $category->category_id])}}"
                    class="list-group-item item_row">
-                    {{$function_type->name}}
+                    {{$category->name}}
                 </a>
-                <a href="{{route('function_type_destroy', ['id' => $function_type->admin_function_type_id])}}"
+                <a href="{{route('category_destroy', ['id' => $category->category_id])}}"
                    class="btn btn-danger btn-sm list_delete_btn">
                     <span class="glyphicon glyphicon-remove"></span>
                 </a>

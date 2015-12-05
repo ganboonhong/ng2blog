@@ -1,23 +1,48 @@
 @extends('admin.templates.create')
 
-    @section('title')
-        編輯功能分類
-    @stop
+@section('title')
+    文章分類（修改）
+@stop
 
-    @section('title')
-        編輯功能分類
-    @stop
+@section('title')
+    文章分類（修改）
+@stop
 
-    @section('content')
+@section('content')
 
-        {!! Form::open(array('route' => array('function_type_update', $function_type->admin_function_type_id))) !!}
-        <div class="form-group">
-            <label for="name">名稱:</label>
-            <input type="text" name="name" class="form-control" id="name" value="{{$function_type->name}}">
-            <input type="hidden" name="id" value="{{$function_type->admin_function_type_id}}"/>
-        </div>
+    {!! Form::open(array('route' => array('category_update', $category->category_id))) !!}
+    <div class="form-group">
+        <label for="name">名稱:</label>
+        <input type="text" name="name" class="form-control" id="name" value="{{$category->name}}">
+    </div>
 
-        <button type="submit" class="btn btn-primary form-control" style="margin-top: 10px">修改</button>
-        {!! Form::close() !!}
+    <div class="form-group">
+        <label for="name_en">英文名稱:</label>
+        <input type="text" name="name_en" class="form-control" id="name_en" value="{{$category->name_en}}">
+    </div>
 
-    @stop
+
+    <div style="margin-bottom: 20px;">
+        公開
+        <span style="margin-left:10px ;margin-right:10px ; ">
+            <label for="visible_Y">是</label>
+            <input name="visible" id="visible_Y" type="radio" value="Y" checked>
+        </span>
+        <label for="visible_N">否</label>
+        <input name="visible" id="visible_N" type="radio" value="N">
+    </div>
+
+    <button type="submit" class="btn btn-primary form-control">修改</button>
+    {!! Form::close() !!}
+
+
+    <script>
+        $('#category_form').validate({
+            rules:{
+                name:"required"
+            }
+        })
+
+    </script>
+
+@stop
