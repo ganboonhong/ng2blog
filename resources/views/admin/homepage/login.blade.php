@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Example</title>
+    <title>Login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}" />
@@ -12,7 +12,8 @@
     <style>
         body
         {
-            background: url('http://farm3.staticflickr.com/2832/12303719364_c25cecdc28_b.jpg') fixed;
+            /*background: url('http://farm3.staticflickr.com/2832/12303719364_c25cecdc28_b.jpg') fixed;*/
+            background: url('../image/sunset.jpeg') fixed;
             background-size: cover;
             padding: 0;
             margin: 0;
@@ -61,7 +62,7 @@
             font-weight: 400;
             letter-spacing: 1px;
             margin-bottom: 5px;
-            color: #FFFFFF;
+            color: #000000;
             outline: 0;
         }
 
@@ -189,7 +190,11 @@
             color: #FFF;
             background-color: rgba(0, 0, 0, 0.66);
             padding: 10px;
-            left: 45%;
+            left: 35%;
+        }
+        .photo-credit
+        {
+            margin-left: 30px;
         }
 
 
@@ -198,8 +203,6 @@
     <script>
         $(function(){
             focus_on_first_input();
-            //$('#username').focus();
-            console.log('bh');
         })
     </script>
 
@@ -234,12 +237,12 @@
                                 <div class="checkbox">
                                     <label>
                                         <input type="checkbox" />
-                                        Remember Me
+                                        <span style="color: black">Remember Me</span>
                                     </label>
                                 </div>
                             </div>
                             <div class="col-md-6 forgot-pass-content">
-                                <a href="javascription:void(0)" class="forgot-pass">Forgot Password</a>
+                                <a href="javascription:void(0)" class="forgot-pass" style="color: black">Forgot Password</a>
                             </div>
                         </div>
                     </div>
@@ -247,7 +250,10 @@
             </div>
         </div>
     </div>
-    <div class="posted-by">Posted By: <a href="http://www.jquery2dotnet.com">Bhaumik Patel</a></div>
+    <div class="posted-by">
+        Designed By: <a href="http://www.jquery2dotnet.com" target="_blank">Bhaumik Patel</a>
+        <span class="photo-credit"></span>Photo Credit: <a href="https://unsplash.com/" target="_blank">Matteo Paganelli</a>
+    </div>
 </div>
 
 

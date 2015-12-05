@@ -35,6 +35,7 @@ class RedirectIfAuthenticated
     public function handle($request, Closure $next)
     {
         if ($this->auth->check()) {
+            //Francis: Redirect authenticated user to this page.
             return redirect('/admin/function');
         }
 

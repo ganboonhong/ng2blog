@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    {!! HTML::style('css/all.css') !!}
+    {!! HTML::style('css/fr_custom.css') !!}
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     {{--jQuery tooltip--}}
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -19,11 +22,12 @@
     {!! HTML::script('js/_general_js.js') !!}
     {!! HTML::script('js/jquery_validation/jquery.validate.js')!!}
     {!! HTML::script('js/jquery_validation/localization/messages_zh_TW.js')!!}
-    {!! HTML::style('css/fr_custom.css') !!}
 
 
 </head>
 <body>
+
+@include('admin.navbar.navbar')
 
 <div class="container">
     <h2>@yield('title')</h2>

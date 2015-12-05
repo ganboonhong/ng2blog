@@ -22,6 +22,8 @@
 </head>
 <body>
 
+@include('admin.navbar.navbar');
+
 <div class="container" id="checkboxes">
 
     <h2>

@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\AdminFunction;
+use App\Category;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class HomepageController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,9 +17,7 @@ class HomepageController extends Controller
      */
     public function index()
     {
-        $functions = AdminFunction::all();
-
-        return view('admin.homepage.home', compact('functions'));
+        //
     }
 
     /**
@@ -29,7 +27,7 @@ class HomepageController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.category.create');
     }
 
     /**
@@ -40,7 +38,9 @@ class HomepageController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = (array)$request->all();
+        Category::create($input);
+        return $this->index();
     }
 
     /**
