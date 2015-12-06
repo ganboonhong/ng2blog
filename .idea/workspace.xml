@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13a0ed04-4921-4f8f-98ca-19511545ae72" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminFunctionTypeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminFunctionTypeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Category.php" afterPath="$PROJECT_DIR$/app/Category.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/article/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/article/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/category/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/category/create.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/category/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/category/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/category/list.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/category/list.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/functions/list.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/functions/list.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/templates/list.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/templates/list.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/navbar/navbar.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/navbar/navbar.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/functions/type_list.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/functions/type_list.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ng2blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,42 +34,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/article/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.076923">
-              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.75184274">
+              <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+              <folding>
+                <element signature="e#1371#1389#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nicEdit.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/nicEditor/nicEdit.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.0">
+              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1449414277000" expanded="true" signature="14144:14207" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/templates/create.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.576923">
+              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/category/list.blade.php">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
-              <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
-              <folding />
+            <state vertical-scroll-proportion="-2.6153846">
+              <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+              <folding>
+                <element signature="e#7#392#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/templates/list.blade.php">
+      <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ArticleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53276354">
-              <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/navbar/navbar.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385">
-              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-              <folding />
+            <state vertical-scroll-proportion="-17.0">
+              <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+              <folding>
+                <element signature="e#40#57#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,15 +113,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_forms.scss" />
-        <option value="$PROJECT_DIR$/resources/views/admin/functions/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminFunctionController.php" />
-        <option value="$PROJECT_DIR$/public/css/app.css" />
-        <option value="$PROJECT_DIR$/resources/views/admin/homepage/home.blade.php" />
         <option value="$PROJECT_DIR$/../../phpMyAdmin/config.inc.php" />
         <option value="$PROJECT_DIR$/../../phpMyAdmin/config/config.inc.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_11_05_151347_create_admin_function_types_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2015_11_05_155842_create_admin_functions_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_11_05_151644_create_posts_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_11_14_151028_create_privileges_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/PrivilegesTableSeeder.php" />
@@ -143,17 +147,23 @@
         <option value="$PROJECT_DIR$/app/Category.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/article/list.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminFunctionTypeController.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/category/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/category/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/functions/type_list.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/functions/list.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/category/list.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/navbar/navbar.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/article/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/templates/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/templates/list.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/category/edit.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_12_06_044323_create_articles_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_11_05_155842_create_admin_functions_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_12_06_050031_create_articles_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" />
+        <option value="$PROJECT_DIR$/public/js/nicEdit.js" />
+        <option value="$PROJECT_DIR$/public/js/nicEditor/nicEdit.js" />
+        <option value="$PROJECT_DIR$/resources/views/admin/article/create.blade.php" />
       </list>
     </option>
   </component>
@@ -224,7 +234,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -525,6 +534,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nicEditor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ng2blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ng2blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="image" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -635,8 +666,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -644,7 +676,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="nav&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/navbar/navbar.blade.php&#10;functioncon&#9;null&#9;null&#10;ca&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/CategoryController.php&#10;adminfun&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/AdminFunctionTypeController.php&#10;rou&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/routes.php&#10;route&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/routes.php&#10;all.css&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/public/css/all.css&#10;login&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/homepage/login.blade.php&#10;AuthenticatesUsers&#9;null&#9;null&#10;authcon&#9;null&#9;null&#10;user/edit&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/user/edit.blade.php&#10;usercon&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/UserController.php&#10;auth.php&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/config/auth.php&#10;user/crea&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/user/create.blade.php&#10;core.js&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/public/js/jquer_validation/core.js&#10;test&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/test.blade.php&#10;fr&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/public/css/fr_custom.css&#10;user/creat&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/user/create.blade.php&#10;template/cre&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/templates/create.blade.php&#10;user/list&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/user/list.blade.php&#10;template/list&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/templates/list.blade.php&#10;function/type_l&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/type_list.blade.php&#10;function/type&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/type_create.blade.php&#10;function/list&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/list.blade.php&#10;user/cre&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/user/create.blade.php&#10;function/edit&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/edit.blade.php&#10;list&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/list.blade.php&#10;function/create&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/create.blade.php&#10;user/create&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/user/create.blade.php&#10;/template/create&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/templates/create.blade.php&#10;create&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/create.blade.php&#10;adminfunc&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/AdminFunctionController.php&#10;AdminFunctionTypeController&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/AdminFunctionTypeController.php&#10;type_list&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/type_list.blade.php&#10;adminfunctiontype&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/AdminFunctionTypeController.php&#10;5cea9975e1410c3b2000b433c132e575&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/storage/framework/views/5cea9975e1410c3b2000b433c132e575&#10;type_l&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/type_list.blade.php&#10;custo&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/public/css/fr_custom.css&#10;templates/list&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/templates/list.blade.php&#10;AdminFunctionController&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/AdminFunctionController.php&#10;template/create&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/templates/create.blade.php&#10;type_crea&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/type_create.blade.php&#10;functioncontroller&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/AdminFunctionController.php&#10;functions/&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions&#10;function_&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/function_type_create.blade.php&#10;type&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/AdminFunctionTypeController.php&#10;function&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/AdminFunctionController.php&#10;AdminFun&#9;null&#9;null&#10;adminfunctioncon&#9;null&#9;null&#10;htmlser&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/article/create.blade.php&#10;route&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/routes.php&#10;create_function&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/database/migrations/2015_11_05_155842_create_admin_functions_table.php&#10;category/edit&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/category/edit.blade.php&#10;nav&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/navbar/navbar.blade.php&#10;functioncon&#9;null&#9;null&#10;ca&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/CategoryController.php&#10;adminfun&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/AdminFunctionTypeController.php&#10;rou&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/routes.php&#10;all.css&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/public/css/all.css&#10;login&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/homepage/login.blade.php&#10;AuthenticatesUsers&#9;null&#9;null&#10;authcon&#9;null&#9;null&#10;user/edit&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/user/edit.blade.php&#10;usercon&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/UserController.php&#10;auth.php&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/config/auth.php&#10;user/crea&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/user/create.blade.php&#10;core.js&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/public/js/jquer_validation/core.js&#10;test&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/test.blade.php&#10;fr&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/public/css/fr_custom.css&#10;user/creat&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/user/create.blade.php&#10;template/cre&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/templates/create.blade.php&#10;user/list&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/user/list.blade.php&#10;template/list&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/templates/list.blade.php&#10;function/type_l&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/type_list.blade.php&#10;function/type&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/type_create.blade.php&#10;function/list&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/list.blade.php&#10;user/cre&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/user/create.blade.php&#10;function/edit&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/edit.blade.php&#10;list&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/list.blade.php&#10;function/create&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/create.blade.php&#10;user/create&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/user/create.blade.php&#10;/template/create&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/templates/create.blade.php&#10;create&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/create.blade.php&#10;adminfunc&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/AdminFunctionController.php&#10;AdminFunctionTypeController&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/AdminFunctionTypeController.php&#10;type_list&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/type_list.blade.php&#10;adminfunctiontype&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/AdminFunctionTypeController.php&#10;5cea9975e1410c3b2000b433c132e575&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/storage/framework/views/5cea9975e1410c3b2000b433c132e575&#10;type_l&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/type_list.blade.php&#10;custo&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/public/css/fr_custom.css&#10;templates/list&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/templates/list.blade.php&#10;AdminFunctionController&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/AdminFunctionController.php&#10;template/create&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/templates/create.blade.php&#10;type_crea&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/type_create.blade.php&#10;functioncontroller&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/AdminFunctionController.php&#10;functions/&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions&#10;function_&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/resources/views/admin/functions/function_type_create.blade.php&#10;type&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/AdminFunctionTypeController.php&#10;function&#9;FILE&#9;file:///Library/WebServer/Documents/Laravel/ng2blog/app/Http/Controllers/AdminFunctionController.php" />
     <property name="FullScreen" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
@@ -656,6 +688,7 @@
       <recent name="$PROJECT_DIR$/resources/views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/js/nicEditor" />
       <recent name="$PROJECT_DIR$/resources/views/admin/category" />
       <recent name="$PROJECT_DIR$/resources/views/admin" />
       <recent name="$PROJECT_DIR$/resources/views/admin/functions" />
@@ -1011,12 +1044,13 @@
       <workItem from="1448768526480" duration="7404000" />
       <workItem from="1448981021581" duration="2577000" />
       <workItem from="1449068773558" duration="296000" />
-      <workItem from="1449299122530" duration="10982000" />
+      <workItem from="1449299122530" duration="11242000" />
+      <workItem from="1449373800279" duration="5482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118067000" />
+    <option name="totallyTimeSpent" value="123809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1030,7 +1064,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39021164" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39021164" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29644588" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1096,35 +1130,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.307693">
-          <caret line="430" column="13" selection-start-line="430" selection-start-column="13" selection-end-line="430" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923">
-          <caret line="2" column="43" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/ThrottlesLogins.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="38" column="19" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4116809">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09686609">
@@ -1227,7 +1232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5392297">
           <caret line="5720" column="29" selection-start-line="5720" selection-start-column="29" selection-end-line="5720" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1235,9 +1239,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding>
-            <element signature="e#40#62#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1245,7 +1246,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.597037">
           <caret line="254" column="103" selection-start-line="254" selection-start-column="103" selection-end-line="254" selection-end-column="103" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1253,7 +1253,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5466667">
           <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1269,7 +1268,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3945869">
           <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1285,7 +1283,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46011397">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1293,7 +1290,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4116809">
           <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1301,7 +1297,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.96866095">
           <caret line="73" column="52" selection-start-line="73" selection-start-column="52" selection-end-line="73" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1309,7 +1304,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.023351649">
           <caret line="1" column="76" selection-start-line="1" selection-start-column="76" selection-end-line="1" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1317,7 +1311,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.461538">
           <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1325,7 +1318,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1333,7 +1325,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1341,23 +1332,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.076923">
           <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="73" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_12_05_112641_create_categories_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43589744">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1365,19 +1339,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34615386">
           <caret line="15" column="56" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="56" />
-          <folding>
-            <element signature="e#842#863#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538">
-          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-          <folding>
-            <element signature="e#7#392#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1389,32 +1350,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/category/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding>
-            <element signature="e#604#632#0#HTML" expanded="true" />
-            <element signature="e#659#705#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminFunctionController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.65384614">
           <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-50.346153">
-          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1430,7 +1370,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16951567">
           <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1438,7 +1377,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21794872">
           <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1446,7 +1384,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1460,31 +1397,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/navbar/navbar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385">
+        <state vertical-scroll-proportion="0.0">
           <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/article/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.076923">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/templates/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44301996">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/category/list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
+        <state vertical-scroll-proportion="0.0">
           <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
           <folding />
         </state>
@@ -1492,9 +1413,108 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/templates/list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53276354">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.36324787">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/category/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65384614">
+          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55270654">
+          <caret line="95" column="27" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_12_05_112641_create_categories_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_11_05_155842_create_admin_functions_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.423077">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_12_06_050031_create_articles_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.307692">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ArticleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.0">
+          <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+          <folding>
+            <element signature="e#7#392#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/templates/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/nicEditor/nicEdit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1449414277000" expanded="true" signature="14144:14207" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/article/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75184274">
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+          <folding>
+            <element signature="e#1371#1389#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

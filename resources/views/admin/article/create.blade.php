@@ -16,13 +16,54 @@
                 <input type="text" name="name" class="form-control" id="name">
             </div>
 
-            <label for="sel1">Select list (select one):</label>
+            <div class="form-group">
+                <label for="name">名稱:</label>
+                <input type="text" name="name" class="form-control" id="name">
+            </div>
 
-            <select name="admin_function_type_id" class="form-control" id="sel1">
-                @foreach( $function_types as $function_type )
-                    <option value="{{$function_type->admin_function_type_id}}">{{$function_type->name}}</option>
+            <label for="sel1">分類：</label>
+
+            <select name="category_id" class="form-control" id="sel1">
+                @foreach( $categories as $category )
+                    <option value="{{$category->category_id}}">{{$category->name}}</option>
                 @endforeach
             </select>
+
+
+
+
+
+
+
+
+
+        <div id="sample">
+            {{--<script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>--}}
+            {!! HTML::script('js/nicEditor/nicEdit.js') !!}
+            <script type="text/javascript">
+                bkLib.onDomLoaded(function() {
+                    new nicEditor({fullPanel : true}).panelInstance('area2');
+                });
+            </script>
+
+            <textarea cols="60" id="area2" style="width:100%">
+                Some Initial Content was in this textarea
+            </textarea>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <button type="submit" class="btn btn-primary form-control" style="margin-top: 10px">新增</button>
         {!! Form::close() !!}

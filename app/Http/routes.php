@@ -35,6 +35,12 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 Route::group(['prefix' => 'admin', 'middleware'  => 'auth'], function(){
 
+    Route::group(['prefix' => 'article'], function(){
+
+        Route::get('create', 'ArticleController@create');
+
+    });
+
     Route::group(['prefix' => 'category'], function(){
 
         Route::get  ('/', 'CategoryController@index');
