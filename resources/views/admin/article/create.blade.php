@@ -12,63 +12,43 @@
 
         {!! Form::open(array('url' => 'admin/article', 'id' => 'article_form')) !!}
             <div class="form-group">
-                <label for="name">名稱:</label>
-                <input type="text" name="name" class="form-control" id="name">
+                <label for="name">標題:</label>
+                <input type="text" name="title" class="form-control" id="title">
             </div>
 
             <div class="form-group">
-                <label for="name">名稱:</label>
-                <input type="text" name="name" class="form-control" id="name">
+                <label for="name">標題(英文):</label>
+                <input type="text" name="title_en" class="form-control" id="title_en">
             </div>
 
-            <label for="sel1">分類：</label>
+            <div class="nice_editor form-group">
+                <label for="name">中文內容:</label>
+                <textarea name="content" id="content" style="width:100%"></textarea>
+            </div>
 
-            <select name="category_id" class="form-control" id="sel1">
-                @foreach( $categories as $category )
-                    <option value="{{$category->category_id}}">{{$category->name}}</option>
-                @endforeach
-            </select>
+            <div class="nice_editor form-group">
+                <label for="name">英文內容:</label>
+                <textarea name="content_en" id="content_en" style="width:100%" class="nice_editor"></textarea>
+            </div>
 
+            <div class="form-group">
+                <label for="sel1">分類：</label>
+                <select name="category_id" class="form-control" id="sel1">
+                    @foreach( $categories as $category )
+                        <option value="{{$category->category_id}}">{{$category->name}}</option>
+                    @endforeach
+                </select>
+            </div>
 
+        @include('admin.partials.footer_elements')
 
-
-
-
-
-
-
-        <div id="sample">
-            {{--<script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>--}}
-            {!! HTML::script('js/nicEditor/nicEdit.js') !!}
-            <script type="text/javascript">
-                bkLib.onDomLoaded(function() {
-                    new nicEditor({fullPanel : true}).panelInstance('area2');
-                });
-            </script>
-
-            <textarea cols="60" id="area2" style="width:100%">
-                Some Initial Content was in this textarea
-            </textarea>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <button type="submit" class="btn btn-primary form-control" style="margin-top: 10px">新增</button>
         {!! Form::close() !!}
 
-        <script>
+
+
+        {!! HTML::script('js/nicEditor/nicEdit.js') !!}
+
+        <script type="text/javascript">
 
             $(function(){
                 $('#function_form').validate({
@@ -78,6 +58,10 @@
                 });
             })
 
+            bkLib.onDomLoaded(function() {
+                new nicEditor({fullPanel : true}).panelInstance('content');
+                new nicEditor({fullPanel : true}).panelInstance('content_en');
+            });
         </script>
 
     @stop

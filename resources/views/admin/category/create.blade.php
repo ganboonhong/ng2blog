@@ -11,6 +11,7 @@
     @section('content')
 
     {!! Form::open(array('url' => 'admin/category', 'id' => 'category_form')) !!}
+
     <div class="form-group">
         <label for="name">名稱:</label>
         <input type="text" name="name" class="form-control" id="name">
@@ -21,18 +22,8 @@
         <input type="text" name="name_en" class="form-control" id="name_en">
     </div>
 
+    @include('admin.partials.footer_elements')
 
-    <div style="margin-bottom: 20px;">
-        公開
-        <span style="margin-left:10px ;margin-right:10px ; ">
-            <label for="visible_Y">是</label>
-            <input name="visible" id="visible_Y" type="radio" value="Y" checked>
-        </span>
-        <label for="visible_N">否</label>
-        <input name="visible" id="visible_N" type="radio" value="N">
-    </div>
-
-    <button type="submit" class="btn btn-primary form-control">新增</button>
     {!! Form::close() !!}
 
 
