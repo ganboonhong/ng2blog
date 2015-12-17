@@ -13,7 +13,7 @@
     {!! Form::open(array('url' => 'admin/category', 'id' => 'category_form')) !!}
 
     <div class="form-group">
-        <label for="name">名稱:</label>
+        <label for="name">名稱xx:</label>
         <input type="text" name="name" class="form-control" id="name">
     </div>
 
